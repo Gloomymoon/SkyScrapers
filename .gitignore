@@ -34,3 +34,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+.vscode/launch.json
+.vscode/settings.json
+V3.rar
+Assets/V0.1.zip
+Assets/V0.1.zip.meta
+Assets/V0.2.zip
+Assets/V0.2.zip.meta
