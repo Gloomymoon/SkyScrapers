@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using V3;
 
@@ -81,6 +82,20 @@ public class LevelItem : MonoBehaviour
         }
     }
 
+    public void Go()
+    {
+        if(GameManager.Instance.GameInfo != null)
+        {
+            GameManager.Instance.Dialog.Show("Opps", "Do you want to start a new game?\nOld game progress will lost.", "NEW GAME", "CANCEL", 2, 0, 
+                                            new UnityAction(StartNewGame), 
+                                            null);
+        }
+        else
+        {
+            StartNewGame();
+        }
+    }
+
     public void StartNewGame()
     {
         int diff = 1;
@@ -140,7 +155,8 @@ public class GameProgress
         if(!PlayerPrefs.HasKey(Key))
         {
             String json = PlayerPrefs.GetString(Key);
-            CopyFrom(JsonUtility.FromJson<GameProgress>(json));
+            if(json.Length > 2)
+                CopyFrom(JsonUtility.FromJson<GameProgress>(json));
         }
         else
         {

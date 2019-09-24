@@ -179,7 +179,8 @@ public class GameBoard : PanelBase
                     if(gameInfo.Lcq[i,j].Equals('.'))
                     {
                         buildings[i,j].Changeable = true;
-                        buildings[i,j].SetLevel(0);
+                        
+                        buildings[i,j].SetLevel(gameInfo.Answer[i,j]);
                     }
                     else
                     {

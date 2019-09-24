@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 0, y: -6}
+  m_EffectDistance: {x: 0, y: -2.5}
   m_UseGraphicAlpha: 1
 --- !u!114 &487091064
 MonoBehaviour:
@@ -4009,7 +4009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 0, y: -6}
+  m_EffectDistance: {x: 0, y: -2.5}
   m_UseGraphicAlpha: 1
 --- !u!114 &898231479
 MonoBehaviour:
@@ -5849,6 +5849,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494154409}
   m_CullTransparentMesh: 0
+--- !u!114 &1494222363 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 750195857220750478, guid: a2426d48ae5acc74ab3a82fa05286729,
+    type: 3}
+  m_PrefabInstance: {fileID: 9165551777521338150}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c0856c9ceb1f84bb32cdecf0f3eeb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1496236366
 GameObject:
   m_ObjectHideFlags: 0
@@ -6203,7 +6215,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d366a5c9af170f0438efbeb6f462f910, type: 3}
+    m_Font: {fileID: 12800000, guid: 6aef64110ec01464a9a41ec43e4ae5f6, type: 3}
     m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
@@ -6672,7 +6684,7 @@ MonoBehaviour:
   - {fileID: -860869419617225932, guid: 1b9393278aa01624391b9664cb926eb9, type: 3}
   - {fileID: -8123780440981387933, guid: 1b9393278aa01624391b9664cb926eb9, type: 3}
   winPanel: {fileID: 1976775775}
-  exitPanel: {fileID: 0}
+  exitPanel: {fileID: 1494222363}
   helpPanel: {fileID: 895023329}
   resetPanel: {fileID: 785095537}
   errorInfo: {fileID: 1562549181}
